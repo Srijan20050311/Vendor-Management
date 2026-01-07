@@ -46,7 +46,6 @@ body {
     background: #f4f6f9;
 }
 
-/* NAVBAR */
 .navbar {
     background: #ffffff;
     padding: 15px 30px;
@@ -75,13 +74,11 @@ body {
     color: red;
 }
 
-/* MAIN CONTAINER */
 .container {
     width: 80%;
     margin: 40px auto;
 }
 
-/* CARD */
 .card {
     background: #ffffff;
     padding: 40px;
@@ -97,7 +94,6 @@ body {
     color: #666;
 }
 
-/* LOGIN PAGE CENTER */
 .login-page {
     height: 100vh;
     display: flex;
@@ -106,7 +102,6 @@ body {
     background: #f4f6f9;
 }
 
-/* LOGIN BOX */
 .login-box {
     width: 350px;
     background: #ffffff;
@@ -138,7 +133,6 @@ body {
     border-radius: 5px;
 }
 
-/* INPUT FIELDS */
 .container input {
   width: 100%;
   padding: 10px;
@@ -147,7 +141,6 @@ body {
   border: 1px solid #ccc;
 }
 
-/* PRIMARY BUTTON */
 .primary-btn {
   width: 100%;
   padding: 10px;
@@ -162,7 +155,6 @@ body {
   background: #b0e600;
 }
 
-/* TABLE */
 .data-table {
   width: 100%;
   border-collapse: collapse;
