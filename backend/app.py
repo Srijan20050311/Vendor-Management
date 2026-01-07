@@ -6,17 +6,14 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-# MongoDB connection
 client = MongoClient("mongodb://localhost:27017/")
 db = client["vendor_db"]
 orders = db["orders"]
 
-# Home test
 @app.route("/")
 def home():
     return jsonify({"message": "Backend running"})
 
-# ADD ORDER API
 @app.route("/add-order", methods=["POST"])
 def add_order():
     data = request.json
@@ -32,7 +29,6 @@ def add_order():
     orders.insert_one(order)
     return jsonify({"message": "Order saved successfully"})
 
-# GET ORDERS API
 @app.route("/get-orders", methods=["GET"])
 def get_orders():
     all_orders = list(orders.find({}, {"_id": 0}))
