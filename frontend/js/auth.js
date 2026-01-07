@@ -3,7 +3,6 @@ import { signInWithEmailAndPassword } from
 "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 window.login = () => {
-  // ✅ CORRECT WAY
   const emailValue = document.getElementById("email").value.trim();
   const passwordValue = document.getElementById("password").value.trim();
 
